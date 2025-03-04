@@ -1,53 +1,58 @@
-
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-
 nav ol {
-    list-style-type: none;
-    padding: 0;
-    display: inline-block;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav ol li {
-    display: inline;
-    margin: 0 15px;
+    list-style: none;
 }
 
 nav ol li a {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: bold;
 }
 
-
-#profile-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #333;
-}
-
-
 section {
-    margin: 20px 0;
     padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: 60%;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+h2 {
+    color: #4CAF50;
+}
 
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: #333;
-    color: white;
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#searchInput {
+    padding: 8px;
+    width: 200px;
+}
+
+#searchButton {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.course-item {
+    background-color: #e0f7fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
 }

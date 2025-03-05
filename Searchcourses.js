@@ -5,15 +5,33 @@ const courses = [
     { "name": "UI/UX Design" }
 ];
 
-// Search logic
+
+function displayAllCourses() {
+    const coursesContainer = document.getElementById('coursesContainer');
+    coursesContainer.innerHTML = '';
+
+    courses.forEach(course => {
+        const div = document.createElement('div');
+        div.textContent = course.name;
+        div.classList.add('course-item');
+        coursesContainer.appendChild(div);
+    });
+}
+
+
 function searchCourses() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const coursesContainer = document.getElementById('coursesContainer');
 
-    // Clear old results
+    
     coursesContainer.innerHTML = '';
 
-    // Filter courses
+   
+    if (searchInput === '') {
+        displayAllCourses();
+        return;
+    }
+
     const filteredCourses = courses.filter(course =>
         course.name.toLowerCase().includes(searchInput)
     );
@@ -30,6 +48,7 @@ function searchCourses() {
     }
 }
 
+
 document.getElementById('searchButton').addEventListener('click', searchCourses);
 
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
@@ -37,3 +56,7 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
         searchCourses();
     }
 });
+
+
+document.getElementById('searchInput').addEventListener('input', searchCourses);
+window.onload = displayAllCourses;

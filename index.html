@@ -8,7 +8,9 @@
 </head>
 <body>
 
-    <!-- Navigation -->
+    <center>
+
+    
     <nav>
         <ol style="list-style: none; display: flex; gap: 15px; justify-content: center; padding: 0;">
             <li><a href="#about">About</a></li>
@@ -19,23 +21,23 @@
         </ol>
     </nav>
 
-    <!-- Profile Image & Header -->
+    
     <section id="profile-image" style="text-align: center; margin: 20px 0;">
         <img src="profile pic.jpg" alt="Profile Picture" width="150" height="150" style="border-radius: 50%;">
         <h1>My Portfolio</h1>
         <p>Welcome to my personal portfolio website!</p>
     </section>
 
-    <!-- About Me Section -->
+    
     <section id="about">
         <h2>About Me</h2>
         <p>Hello! I'm Jude Adrianne B. Jimoya, passionate about creating apps. I love building amazing projects and solving problems through technology.</p>
     </section>
 
-    <!-- Skills Section -->
+    
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
+        <ul class="centered-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>React Native</li>
@@ -43,7 +45,15 @@
         </ul>
     </section>
 
-    <!-- Education Section -->
+    
+    <section id="courses-section">
+        <h2>Search Courses</h2>
+        <input type="text" id="searchInput" placeholder="Search courses...">
+        <button id="searchButton">Search</button>
+        <div id="coursesContainer"></div>
+    </section>
+
+    
     <section id="education">
         <h2>Education</h2>
         <ul style="list-style: none; padding: 0;">
@@ -53,7 +63,7 @@
         </ul>
     </section>
 
-    <!-- Contact Section -->
+    
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Cellphone#: 09706858417</p>
@@ -62,20 +72,14 @@
         <p>GitHub: <a href="https://github.com/SURAMBAW" target="_blank">Jude's GitHub</a></p>
     </section>
 
-    <!-- Search Courses Section -->
-    <section id="courses-section">
-        <h2>Search Courses</h2>
-        <input type="text" id="searchInput" placeholder="Search courses...">
-        <button id="searchButton">Search</button>
-        <div id="coursesContainer"></div>
-    </section>
-
-    <!-- Footer -->
+    
     <footer id="footer" style="text-align: center; margin-top: 20px;">
         <p>&copy; 2024 Jude Adrianne B. Jimoya. All rights reserved.</p>
     </footer>
 
-    <!-- Link to External JavaScript -->
-    <script src="script.js"></script>
+    
+    <script src="Searchcourses.js"></script>
+
+</center>
 </body>
 </html>

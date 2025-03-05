@@ -56,3 +56,18 @@ ul {
     border-radius: 5px;
     border: 1px solid #4CAF50;
 }
+#skills ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0;
+    text-align: center; /* Centers the list items */
+}
+
+#skills ul li {
+    display: inline-block; /* Makes the list items horizontal */
+    margin: 0 10px; /* Adds spacing between items */
+    background-color: #e0f7fa;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+    font-weight: bold;
+}

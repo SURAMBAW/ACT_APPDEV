@@ -1,8 +1,8 @@
 const courses = [
     { "name": "Web Development" },
     { "name": "Mobile App Development" },
-    { "name": "Data Science" },
-    { "name": "UI/UX Design" }
+    { "name": "Capstone 1" },
+    { "name": "Rotc" }
 ];
 
 
